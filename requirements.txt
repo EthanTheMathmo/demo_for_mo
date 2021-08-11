@@ -1,0 +1,2 @@
+xlwings==0.24.5
+PySimpleGUI==4.45.0
