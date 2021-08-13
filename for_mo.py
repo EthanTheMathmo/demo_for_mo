@@ -47,18 +47,17 @@ def char_lim_255(address):
 
 def color_cells(color_dict, wb):
     """
-    color_dict maps integers between 1 and 56 inclusive to lists of cells which are to be colored that color
+    color_dict maps RGB tuples (0:255, 0:255, 0:255) to lists of cells which are to be colored that color
     
-    
-    (1 to 56 are the numbers excel uses for its color chart)
-    
+    empty lists are ignored and so can be passed in safely
+
     !wb should already be defined in the python file to be the current workbook!
     """
     for color in color_dict:
         if color_dict[color] != []:
             addresses = ",".join(color_dict[color])
             for addresses_sub_255 in char_lim_255(addresses):
-                wb.sheets.active.range(addresses_sub_255).api.Interior.ColorIndex = color
+                wb.sheets.active.range(addresses_sub_255).color = color
         else:
             #if the array is empty, there is nothing to color, so we pass
             pass
@@ -68,7 +67,7 @@ def highlight_dates_to_expiry():
     """
     Given a selection of cells which are dates
     TO-DO:
-        ERROR HANDLING FOR IF THE VALUES ARE NOT DATETIMES (partially done 13.08.21)
+        ERROR HANDLING FOR IF THE VALUES ARE NOT DATETIMES
         Change the color coding based on datetimes to ones requested. (Currently: 1 year green, 6mths-1yr yellow, less than 
         6 months is red. Should probably be more of a gradation, perhaps with red set aside for if it has expired?)
     
@@ -130,7 +129,8 @@ def highlight_dates_to_expiry():
             pass
 
     
-    color_cells(color_dict={4:green_list, 3: red_list, 13:purple_list,6:yellow_list}, wb=wb)
+    color_cells(color_dict={(102,255,102):green_list, (255,102,102): red_list, (255,153,255):purple_list,(255,255,153):yellow_list}, wb=wb)
+
 if __name__ == '__main__':
     # Expects the Excel file next to this source file, adjust accordingly.
     xw.Book(r"C:\Users\ethan\Documents\Mo Forgan demo\Mentor student template.xlsm").set_mock_caller()
