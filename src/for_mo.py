@@ -12,8 +12,13 @@ Link capabilities
 
 def add_link():
     file_address = file_address_gui()[0] #gets the address of the file clicked on
-    create_comment = xw.books["MACROS_SHFX.xlsm"].macro(r'AddComment') #this assumes MACROS_SHFX is open
-    create_comment(file_address)
+    if file_address == "":
+        error_title = "A small hiccup"
+        error_body = "You forgot to enter a link!"
+        simple_error(error_title=error_title, error_body=error_body)
+    else:
+        create_comment = xw.books["MACROS_SHFX.xlsm"].macro(r'AddComment') #this assumes MACROS_SHFX is open
+        create_comment(file_address)
 
 def open_link():
     """
