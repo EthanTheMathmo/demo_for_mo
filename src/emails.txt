@@ -1,0 +1,82 @@
+file name: Decrease (Increase) in inventories
+file location: C:/Users/ethan/Documents/example files/email extraction/Decrease (Increase) in inventories.pdf
+	sandra.lawson@gs.com
+	ouvidoriagoldmansachs@gs.com
+	sonya.banerjee@gs.com
+	dan.duggan@gs.com
+	amanda.hindlian@gs.com
+	michael.hinds@gs.com
+
+file name: Depreciation and amortization expense
+file location: C:/Users/ethan/Documents/example files/email extraction/Depreciation and amortization expense.pdf
+	sandra.lawson@gs.com
+	ouvidoriagoldmansachs@gs.com
+	sonya.banerjee@gs.com
+	dan.duggan@gs.com
+	amanda.hindlian@gs.com
+	michael.hinds@gs.com
+
+file name: Dividends received
+file location: C:/Users/ethan/Documents/example files/email extraction/Dividends received.pdf
+	allison.nathan@gs.com
+	peter.oppenheimer@gs.com
+	david.kostin@gs.com
+	jenny.grimberg@gs.com
+	franklin.jarman@gs.com
+	ouvidoriagoldmansachs@gs.com
+	lotfi.karoui@gs.com
+	jeffrey.currie@gs.com
+	gabe.liptongalbraith@gs.com
+
+file name: Income taxes paid
+file location: C:/Users/ethan/Documents/example files/email extraction/Income taxes paid.pdf
+	allison.nathan@gs.com
+	peter.oppenheimer@gs.com
+	david.kostin@gs.com
+	jenny.grimberg@gs.com
+	franklin.jarman@gs.com
+	ouvidoriagoldmansachs@gs.com
+	lotfi.karoui@gs.com
+	jeffrey.currie@gs.com
+	gabe.liptongalbraith@gs.com
+
+file name: Interest and dividends income
+file location: C:/Users/ethan/Documents/example files/email extraction/Interest and dividends income.pdf
+	alec.phillips@gs.com
+	filippo.taddei@gs.com
+	allison.nathan@gs.com
+	contatogoldmanbrasil@gs.com
+	jenny.grimberg@gs.com
+	dominic.wilson@gs.com
+	daan.struyven@gs.com
+	gabe.liptongalbraith@gs.com
+	jan.hatzius@gs.com
+
+file name: Interest paid
+file location: C:/Users/ethan/Documents/example files/email extraction/Interest paid.pdf
+	alec.phillips@gs.com
+	filippo.taddei@gs.com
+	allison.nathan@gs.com
+	contatogoldmanbrasil@gs.com
+	jenny.grimberg@gs.com
+	dominic.wilson@gs.com
+	daan.struyven@gs.com
+	gabe.liptongalbraith@gs.com
+	jan.hatzius@gs.com
+
+file name: Interest received
+file location: C:/Users/ethan/Documents/example files/email extraction/Interest received.pdf
+	sandra.lawson@gs.com
+	hui.shan@gs.com
+	ouvidoriagoldmansachs@gs.com
+	sonya.banerjee@gs.com
+	amanda.hindlian@gs.com
+
+file name: Profit (Loss) before tax
+file location: C:/Users/ethan/Documents/example files/email extraction/Profit (Loss) before tax.pdf
+	sandra.lawson@gs.com
+	hui.shan@gs.com
+	ouvidoriagoldmansachs@gs.com
+	sonya.banerjee@gs.com
+	amanda.hindlian@gs.com
+

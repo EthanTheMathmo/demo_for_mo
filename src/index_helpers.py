@@ -76,3 +76,35 @@ def block_to_list(block_address):
     return ",".join([",".join([convert_from_tuple((i,j)) for j in range(first_tuple[1], last_tuple[1]+1)]) for i in range(first_tuple[0], last_tuple[0]+1)])
 
 
+def char_lim_255(address):
+    """
+    breaks a string of addresses into ones which are sub<255 chars
+
+    Used in, for example, color_cells, in case the range selected has addresses of length >=255 chars
+    """
+
+    if len(address) > 255:
+        for i in reversed(range(256)):
+            if address[i] == ",":
+                return [address[:i]] + char_lim_255(address[i+1:])
+            else:
+                pass
+    else:
+        return [address]
+
+
+
+def next_down(cell_address):
+    """
+    given a cell, say, $B$6, this returns the address of the next cell down, in this case $B$7
+    """
+    address_split = cell_address.split("$")
+    address_split[-1] = str(int(address_split[-1])+1)
+    return "$".join( address_split)
+
+def next_along(cell_address):
+    """
+    Given a cell, say, $B$6, returns the next cell along, in this case, $C$6
+    """
+    cell_tuple = convert_to_tuple(cell_address)
+    return convert_from_tuple((cell_tuple[0]+1, cell_tuple[1]))

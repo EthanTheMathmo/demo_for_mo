@@ -11,7 +11,6 @@ def input_link():
 
     
 
-    x=1
 
 
 if __name__ == '__main__':
